@@ -8,6 +8,6 @@ namespace BetterFabber
 
         public override string Author => "Dragon";
 
-        public override string Description => "Multiple changes to overhaul the ship fabricator";
+        public override string Description => "Increases fabricator recycle and print speed. Auto-recycles alloy.";
     }
 }

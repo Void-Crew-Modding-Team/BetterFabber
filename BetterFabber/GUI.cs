@@ -14,13 +14,13 @@ namespace BetterFabber
         {
             //UI
             Label("Better Fabber menu");
-            FlexibleSpace();
+            //FlexibleSpace();
             Label("Fabricator Recycle Speed");
             FabRecycleSpeed = TextField(FabRecycleSpeed);
-            FlexibleSpace();
+            //FlexibleSpace();
             Label("Fabricator Print Speed");
             FabPrintSpeed = TextField(FabPrintSpeed);
-            FlexibleSpace();
+            //FlexibleSpace();
             if(Button($"Auto Recycle Alloy: {(BepinPlugin.Bindings.AutoRecycleAlloy.Value ? "Enabled" : "Disabled")}"))
             {
                 BepinPlugin.Bindings.AutoRecycleAlloy.Value = !BepinPlugin.Bindings.AutoRecycleAlloy.Value;
