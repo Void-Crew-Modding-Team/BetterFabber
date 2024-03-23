@@ -16,7 +16,7 @@ namespace BetterFabber
         {
             Log = Logger;
             Bindings.FabRecycleSpeedMultiplier = Config.Bind("General", "FabRecycleSpeedMultiplier", 10f);
-            Bindings.FabPrintSpeedMultiplier = Config.Bind("General", "FabRecycleSpeedMultiplier", 10f);
+            Bindings.FabPrintSpeedMultiplier = Config.Bind("General", "FabPrintSpeedMultiplier", 10f);
             Bindings.AutoRecycleAlloy = Config.Bind("General", "AutoRecycleAlloy", true);
             Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly(), MyPluginInfo.PLUGIN_GUID);
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
