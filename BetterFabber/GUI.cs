@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using VoidManager.CustomGUI;
+using VoidManager.Utilities;
 using static UnityEngine.GUILayout;
 
 namespace BetterFabber
@@ -21,10 +22,8 @@ namespace BetterFabber
             Label("Fabricator Print Speed");
             FabPrintSpeed = TextField(FabPrintSpeed);
             //FlexibleSpace();
-            if(Button($"Auto Recycle Alloy: {(BepinPlugin.Bindings.AutoRecycleAlloy.Value ? "Enabled" : "Disabled")}"))
-            {
-                BepinPlugin.Bindings.AutoRecycleAlloy.Value = !BepinPlugin.Bindings.AutoRecycleAlloy.Value;
-            }
+            GUITools.DrawCheckbox("Auto Recycle Alloy", ref BepinPlugin.Bindings.AutoRecycleAlloy);
+            GUITools.DrawCheckbox("Auto Recycle Everything (except blank crates)", ref BepinPlugin.Bindings.AutoRecycleEverything);
 
 
             //Value validation

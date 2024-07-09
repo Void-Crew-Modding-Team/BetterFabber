@@ -18,6 +18,7 @@ namespace BetterFabber
             Bindings.FabRecycleSpeedMultiplier = Config.Bind("General", "FabRecycleSpeedMultiplier", 10f);
             Bindings.FabPrintSpeedMultiplier = Config.Bind("General", "FabPrintSpeedMultiplier", 10f);
             Bindings.AutoRecycleAlloy = Config.Bind("General", "AutoRecycleAlloy", true);
+            Bindings.AutoRecycleEverything = Config.Bind("General", "AutoRecycleEverything", false);
             Harmony.CreateAndPatchAll(Assembly.GetExecutingAssembly(), MyPluginInfo.PLUGIN_GUID);
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
         }
@@ -27,6 +28,7 @@ namespace BetterFabber
             internal static ConfigEntry<float> FabRecycleSpeedMultiplier;
             internal static ConfigEntry<float> FabPrintSpeedMultiplier;
             internal static ConfigEntry<bool> AutoRecycleAlloy;
+            internal static ConfigEntry<bool> AutoRecycleEverything;
         }
     }
 }
