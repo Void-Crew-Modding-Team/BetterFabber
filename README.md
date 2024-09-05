@@ -4,7 +4,7 @@
 
 # Better Fabber
 
-Version 1.0.1  
+Version 1.0.2  
 For Game Version 0.27.0  
 Developed by Dragon, 18107  
 Requires VoidManager 1.1.8
