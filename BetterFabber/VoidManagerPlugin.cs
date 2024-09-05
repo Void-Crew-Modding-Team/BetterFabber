@@ -4,10 +4,12 @@ namespace BetterFabber
 {
     public class VoidManagerPlugin : VoidManager.VoidPlugin
     {
-        public override MultiplayerType MPType => MultiplayerType.Client;
+        public override MultiplayerType MPType => MultiplayerType.Session;
 
-        public override string Author => "Dragon, 18107";
+        public override string Author => MyPluginInfo.PLUGIN_AUTHORS;
 
-        public override string Description => "Increases fabricator recycle and print speed. Auto-recycles alloy.";
+        public override string Description => MyPluginInfo.PLUGIN_DESCRIPTION;
+
+        public override string ThunderstoreID => MyPluginInfo.PLUGIN_THUNDERSTORE_ID;
     }
 }

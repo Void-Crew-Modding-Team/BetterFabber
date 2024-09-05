@@ -14,7 +14,7 @@ namespace BetterFabber
         public override void Draw()
         {
             //UI
-            Label("Better Fabber menu");
+            Label($"{MyPluginInfo.USERS_PLUGIN_NAME} menu");
             //FlexibleSpace();
             Label("Fabricator Recycle Speed");
             FabRecycleSpeed = TextField(FabRecycleSpeed);
@@ -64,7 +64,7 @@ namespace BetterFabber
 
         public override string Name()
         {
-            return "Better Fabber";
+            return MyPluginInfo.USERS_PLUGIN_NAME;
         }
 
         public override void OnOpen()
